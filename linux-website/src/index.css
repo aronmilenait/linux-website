@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Lato', sans-serif;
+    }
+}
+
+/* Animations */
+
+.hover\:logo-rotate:hover img {
+    transform: rotate(-12deg);
+  }
+  
+  .hover\:rotate-12:hover {
+    transform: rotate(12deg);
+  }
+  
+.hero-image {
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.reason-card {
+  position: relative;
+  cursor: pointer;
+}
+
+.reason-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
