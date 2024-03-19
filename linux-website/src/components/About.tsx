@@ -6,6 +6,13 @@ const About = () => {
     <section id="about" className="bg-teal-600">
       <div className="max-w-4xl mx-auto px-4 py-10 text-white">
         <h2 className="text-5xl font-bold mb-4 text-center">About</h2>
+        <div className="flex justify-center py-5">
+          <img
+            src={AboutImage}
+            alt="Hero image"
+            className="w-full md:w-3/4 lg:w-3/4 xl:w-3/4 rounded-xl shadow-xl"
+          />
+        </div>
         <p className="text-xl mb-10">
           The primary objective of this website is to guide you through the
           process of transitioning to Linux, covering every aspect: from
@@ -17,13 +24,6 @@ const About = () => {
           or if you're simply intrigued by the GNU/Linux world and contemplating
           making the switch, then you've come to the right place!
         </p>
-        <div className="flex justify-center py-5">
-          <img
-            src={AboutImage}
-            alt="Hero image"
-            className="w-full md:w-3/4 lg:w-3/4 xl:w-3/4 rounded-xl shadow-xl"
-          />
-        </div>
         <div className="flex justify-center mt-10">
           <video
             loop
